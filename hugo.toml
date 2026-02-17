@@ -1,22 +1,28 @@
-baseURL = "/"
+baseURL = "https://notajely.github.io/camera-archive/"
 languageCode = "zh-cn"
 title = "FilmCameraDB"
 theme = "PaperMod"
+
 [pagination]
   pagerSize = 20
+
 [params]
+  homeInfoParams = {Title = "Camera File"}
   ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = false
+
 [taxonomies]
   tag = "tags"
   brand = "brands"
+
 [[menus.main]]
   name = "Cameras"
   url = "/cameras/"
   weight = 1
+
 [[menus.main]]
-  name = "brands"
+  name = "Brands"
   url = "/brands/"
   weight = 2
