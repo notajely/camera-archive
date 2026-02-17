@@ -3,17 +3,19 @@
     <div class="specs-grid">
         {{ range $key, $value := .Params.specs }}
         {{ if $value }}
-        <div class="spec-label">{{ title (replace $key "_" " ") }}</div>
-        <div class="spec-value">
-            {{ if eq $key "mount" }}
-            {{ $url := printf "mounts/%s" ($value | urlize) }}
-            <a href="{{ $url | relURL }}">{{ $value }}</a>
-            {{ else if eq $key "film_format" }}
-            {{ $url := printf "formats/%s" ($value | urlize) }}
-            <a href="{{ $url | relURL }}">{{ $value }}</a>
-            {{ else }}
-            {{ $value }}
-            {{ end }}
+        <div class="spec-row">
+            <div class="spec-label">{{ title (replace $key "_" " ") }}</div>
+            <div class="spec-value">
+                {{ if eq $key "mount" }}
+                {{ $url := printf "mounts/%s" ($value | urlize) }}
+                <a href="{{ $url | relURL }}">{{ $value }}</a>
+                {{ else if eq $key "film_format" }}
+                {{ $url := printf "formats/%s" ($value | urlize) }}
+                <a href="{{ $url | relURL }}">{{ $value }}</a>
+                {{ else }}
+                {{ $value }}
+                {{ end }}
+            </div>
         </div>
         {{ end }}
         {{ end }}

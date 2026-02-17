@@ -29,9 +29,9 @@ theme = "PaperMod"
   shouldSort = true
   location = 0
   distance = 1000
-  threshold = 0.4
-  minMatchCharLength = 0
-  keys = ["title", "content", "params.specs.mount", "brands"]
+  threshold = 0.3
+  minMatchCharLength = 2
+  keys = ["title", "summary", "params.specs.mount", "brands"]
 
 [[menus.main]]
   name = "Cameras"

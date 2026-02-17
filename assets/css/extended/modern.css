@@ -1,12 +1,19 @@
-/* Modern & Minimalist UI Enhancement */
+/* Modern & Minimalist UI Enhancement - Theme Aware */
 
 :root {
     --page-width: 800px;
     --card-radius: 12px;
     --pill-radius: 50px;
     --accent: #2c3e50;
-    --accent-light: #ecf0f1;
+    --accent-light: #f8f9fa;
+    --border-color: rgba(0, 0, 0, 0.06);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark {
+    --accent: #ecf0f1;
+    --accent-light: #2e2e33;
+    --border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Reduce excessive vertical gaps */
@@ -15,58 +22,55 @@ main {
 }
 
 .post-header {
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
 }
 
 .post-title {
-    font-size: 2.2rem !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.02em;
-    margin-bottom: 10px !important;
+    font-size: 2.4rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px !important;
+    color: var(--primary);
 }
 
-/* Modern Typography fallback */
+/* Base UI */
 body {
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.01em;
-}
-
-/* Refined Post Cards (General) */
-.post-entry {
-    background: var(--code-bg) !important;
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
-    border-radius: var(--card-radius) !important;
-    padding: 24px !important;
-    transition: var(--transition) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
-}
-
-.post-entry:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
-    border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Camera Grid Layout */
 .camera-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
+    gap: 32px;
     margin: 40px 0;
 }
 
 .camera-card {
+    background: var(--theme);
     display: flex;
     flex-direction: column;
     padding: 0 !important;
     overflow: hidden;
     height: 100%;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--card-radius) !important;
+    transition: var(--transition) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03) !important;
+}
+
+.camera-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1) !important;
+    border-color: var(--secondary) !important;
 }
 
 .camera-card .card-cover {
     width: 100%;
     aspect-ratio: 3/2;
     overflow: hidden;
+    background: #f0f0f0;
 }
 
 .camera-card .card-cover img {
@@ -89,7 +93,7 @@ body {
 }
 
 .camera-card .entry-header h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.35rem !important;
     margin: 0 0 10px 0 !important;
     line-height: 1.2;
 }
@@ -98,108 +102,138 @@ body {
     font-size: 0.9rem;
     color: var(--secondary);
     line-height: 1.6;
-    margin-bottom: 0 !important;
 }
 
 .mount-pill {
     display: inline-block;
-    padding: 2px 10px;
+    padding: 3px 10px;
     background: var(--accent-light);
-    color: var(--accent);
+    color: var(--secondary);
     border-radius: 4px;
     font-size: 0.7rem;
     font-weight: 600;
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    border: 1px solid var(--border-color);
 }
 
-/* Taxonomy Pills in Single Page */
-.spec-value a {
-    display: inline-block;
-    padding: 2px 12px;
-    background: var(--accent-light);
-    color: var(--accent) !important;
-    border-radius: var(--pill-radius);
-    font-size: 0.85em;
-    text-decoration: none !important;
-    transition: var(--transition);
-    border: 1px solid transparent;
-}
-
-.spec-value a:hover {
-    background: var(--accent);
-    color: white !important;
-}
-
-/* Status Badge */
-.status-badge {
-    padding: 3px 10px;
-    background: #e1f5fe;
-    color: #01579b !important;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-
-/* Specs Container - More compact & clear focus */
+/* Specs Container - Premium Row Layout */
 .camera-specs-container {
-    border: none !important;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06) !important;
     background: var(--theme) !important;
-    margin: 40px 0 !important;
-    padding: 30px !important;
+    margin: 50px 0 !important;
+    padding: 40px !important;
     border-radius: var(--card-radius);
-    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04) !important;
 }
 
 .camera-specs-container h3 {
-    border-bottom: 1px solid var(--tertiary);
-    padding-bottom: 15px;
-    margin-bottom: 25px !important;
-    font-size: 1.25rem;
-    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px !important;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 .specs-grid {
-    display: grid !important;
-    grid-template-columns: 160px 1fr !important;
-    gap: 12px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
     align-items: baseline;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
 }
 
 .spec-label {
     font-size: 0.75rem !important;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: var(--secondary) !important;
-    font-weight: 600;
-    opacity: 0.6;
-    text-align: left;
-    padding-top: 2px;
+    font-weight: 700;
+    opacity: 0.5;
 }
 
 .spec-value {
     font-size: 1rem;
     font-weight: 500;
     color: var(--primary);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-/* Adjust main for grid */
-.page-header {
-    margin-bottom: 40px;
+.spec-value a {
+    display: inline-block;
+    padding: 2px 14px;
+    background: var(--accent-light);
+    color: var(--secondary) !important;
+    border-radius: var(--pill-radius);
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
 }
 
-.main {
-    max-width: 1100px !important;
+.spec-value a:hover {
+    background: var(--primary);
+    color: var(--theme) !important;
+    border-color: var(--primary);
+}
+
+/* Collection Archive Container */
+.collection-info-container {
+    margin: 60px 0 !important;
+    padding: 40px !important;
+    border-radius: var(--card-radius);
+    background: var(--accent-light) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.collection-info-container h4 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.status-badge {
+    padding: 4px 12px;
+    background: var(--secondary);
+    color: var(--theme) !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* Search UI */
 #searchInput {
+    background: var(--theme);
+    color: var(--primary);
     border-radius: var(--card-radius) !important;
-    padding: 15px 25px !important;
-    border: 1px solid var(--tertiary) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    padding: 18px 28px !important;
+    border: 1px solid var(--border-color) !important;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+#searchInput:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px var(--border-color) !important;
+}
+
+/* Global Width Adjustment */
+.main {
+    max-width: 1100px !important;
 }
