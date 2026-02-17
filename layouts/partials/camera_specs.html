@@ -8,9 +8,11 @@
         </div>
         <div class="spec-value">
             {{ if eq $key "mount" }}
-            <a href="{{ (printf " mounts/%s" ($value | urlize)) | relURL }}">{{ $value }}</a>
+            {{ $url := printf "mounts/%s" ($value | urlize) }}
+            <a href="{{ $url | relURL }}">{{ $value }}</a>
             {{ else if eq $key "film_format" }}
-            <a href="{{ (printf " formats/%s" ($value | urlize)) | relURL }}">{{ $value }}</a>
+            {{ $url := printf "formats/%s" ($value | urlize) }}
+            <a href="{{ $url | relURL }}">{{ $value }}</a>
             {{ else }}
             {{ $value }}
             {{ end }}
