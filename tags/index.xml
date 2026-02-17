@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on FilmCameraDB</title>
-    <link>/tags/</link>
+    <link>https://notajely.github.io/camera-archive/tags/</link>
     <description>Recent content in Tags on FilmCameraDB</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://notajely.github.io/camera-archive/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>35mm</title>
-      <link>/tags/35mm/</link>
+      <link>https://notajely.github.io/camera-archive/tags/35mm/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/35mm/</guid>
+      <guid>https://notajely.github.io/camera-archive/tags/35mm/</guid>
       <description></description>
     </item>
     <item>
       <title>Canon</title>
-      <link>/tags/canon/</link>
+      <link>https://notajely.github.io/camera-archive/tags/canon/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/canon/</guid>
+      <guid>https://notajely.github.io/camera-archive/tags/canon/</guid>
       <description></description>
     </item>
     <item>
       <title>Ltm</title>
-      <link>/tags/ltm/</link>
+      <link>https://notajely.github.io/camera-archive/tags/ltm/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/ltm/</guid>
+      <guid>https://notajely.github.io/camera-archive/tags/ltm/</guid>
       <description></description>
     </item>
     <item>
       <title>旁轴</title>
-      <link>/tags/%E6%97%81%E8%BD%B4/</link>
+      <link>https://notajely.github.io/camera-archive/tags/%E6%97%81%E8%BD%B4/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/%E6%97%81%E8%BD%B4/</guid>
+      <guid>https://notajely.github.io/camera-archive/tags/%E6%97%81%E8%BD%B4/</guid>
       <description></description>
     </item>
   </channel>
