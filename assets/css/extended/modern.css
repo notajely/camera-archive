@@ -1,0 +1,205 @@
+/* Modern & Minimalist UI Enhancement */
+
+:root {
+    --page-width: 800px;
+    --card-radius: 12px;
+    --pill-radius: 50px;
+    --accent: #2c3e50;
+    --accent-light: #ecf0f1;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reduce excessive vertical gaps */
+main {
+    padding-top: 30px !important;
+}
+
+.post-header {
+    margin-bottom: 20px !important;
+}
+
+.post-title {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px !important;
+}
+
+/* Modern Typography fallback */
+body {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+}
+
+/* Refined Post Cards (General) */
+.post-entry {
+    background: var(--code-bg) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: var(--card-radius) !important;
+    padding: 24px !important;
+    transition: var(--transition) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Camera Grid Layout */
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.camera-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+.camera-card .card-cover {
+    width: 100%;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+}
+
+.camera-card .card-cover img {
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    transition: var(--transition);
+}
+
+.camera-card:hover .card-cover img {
+    transform: scale(1.05);
+}
+
+.camera-card .card-details {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.camera-card .entry-header h2 {
+    font-size: 1.3rem !important;
+    margin: 0 0 10px 0 !important;
+    line-height: 1.2;
+}
+
+.camera-card .entry-content {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-bottom: 0 !important;
+}
+
+.mount-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Taxonomy Pills in Single Page */
+.spec-value a {
+    display: inline-block;
+    padding: 2px 12px;
+    background: var(--accent-light);
+    color: var(--accent) !important;
+    border-radius: var(--pill-radius);
+    font-size: 0.85em;
+    text-decoration: none !important;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.spec-value a:hover {
+    background: var(--accent);
+    color: white !important;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 3px 10px;
+    background: #e1f5fe;
+    color: #01579b !important;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+/* Specs Container - More compact & clear focus */
+.camera-specs-container {
+    border: none !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06) !important;
+    background: var(--theme) !important;
+    margin: 40px 0 !important;
+    padding: 30px !important;
+    border-radius: var(--card-radius);
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.camera-specs-container h3 {
+    border-bottom: 1px solid var(--tertiary);
+    padding-bottom: 15px;
+    margin-bottom: 25px !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.specs-grid {
+    display: grid !important;
+    grid-template-columns: 160px 1fr !important;
+    gap: 12px 30px !important;
+    align-items: baseline;
+}
+
+.spec-label {
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary) !important;
+    font-weight: 600;
+    opacity: 0.6;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.spec-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.4;
+}
+
+/* Adjust main for grid */
+.page-header {
+    margin-bottom: 40px;
+}
+
+.main {
+    max-width: 1100px !important;
+}
+
+/* Search UI */
+#searchInput {
+    border-radius: var(--card-radius) !important;
+    padding: 15px 25px !important;
+    border: 1px solid var(--tertiary) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
