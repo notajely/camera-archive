@@ -2,24 +2,33 @@
 title: "Canon IV Sb（1952）"
 date: 2026-02-17
 draft: false
-tags: ["canon", "旁轴", "35mm", "ltm"]
+# --- 索引字段 (Taxonomies) ---
 brands: ["canon"]
+mounts: ["M39 Leica Thread Mount"]
+formats: ["135 (35mm)"]
+tags: ["canon", "旁轴", "35mm", "ltm"]
+
 cover:
   image: "CanonIVSb-1.jpg"
   alt: "Canon IV Sb"
----
 
-{{< specs-start >}}
-{{< spec label="Film Type" >}}135（35mm）{{< /spec >}}
-{{< spec label="Lens" >}}35mm f/3.5 Canon Serenar，4-element, coated；50mm f/1.9 Canon Serenar，6-element, coated{{< /spec >}}
-{{< spec label="Lens Mount" >}}M39 Leica Thread Mount{{< /spec >}}
-{{< spec label="Focus Range" >}}1.07m to infinite{{< /spec >}}
-{{< spec label="Viewfinder" >}}Rangefinder, Rotating Variable Prism{{< /spec >}}
-{{< spec label="Shutter" >}}Cloth Focal Plane. T, B, 1–1/1000 sec{{< /spec >}}
-{{< spec label="Flash Sync" >}}FP + X-sync @ 1/15 sec (proprietary rail mount){{< /spec >}}
-{{< spec label="Metering" >}}None{{< /spec >}}
-{{< spec label="Battery" >}}None{{< /spec >}}
-{{< specs-end >}}
+# --- 公开参数 (Specs) ---
+specs:
+  film_format: "135 (35mm)"
+  lens: "35mm f/3.5 Canon Serenar，4-element, coated；50mm f/1.9 Canon Serenar，6-element, coated"
+  mount: "M39 Leica Thread Mount"
+  focus_range: "1.07m to infinite"
+  viewfinder: "Rangefinder, Rotating Variable Prism"
+  shutter_speeds: "Cloth Focal Plane. T, B, 1–1/1000 sec"
+  flash_sync: "FP + X-sync @ 1/15 sec (proprietary rail mount)"
+  metering: "None"
+  battery: "None"
+
+# --- 个人收藏档案 (Collection) ---
+collection:
+  status: "Owned"
+  condition: "Ex+ (黄斑清晰)"
+---
 
 {{< gallery >}}
 ![1952年美国市场宣传广告](CanonIVSbAd.jpg)

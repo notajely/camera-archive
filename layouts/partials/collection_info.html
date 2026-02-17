@@ -1,0 +1,39 @@
+{{ if .Params.collection }}
+<div class="collection-info-container"
+    style="margin: 20px 0; padding: 15px; border: 1px dashed var(--tertiary); border-radius: 8px; font-size: 0.9em;">
+    <h4 style="margin-top: 0; color: var(--secondary);">My Collection Archive</h4>
+    <div class="collection-grid" style="display: grid; grid-template-columns: max-content auto; gap: 5px 15px;">
+        {{ with .Params.collection.status }}
+        <div class="col-label" style="opacity: 0.8;">Status:</div>
+        <div class="col-value"><span class="status-badge">{{ . }}</span></div>
+        {{ end }}
+
+        {{ with .Params.collection.condition }}
+        <div class="col-label" style="opacity: 0.8;">Condition:</div>
+        <div class="col-value">{{ . }}</div>
+        {{ end }}
+
+        {{ if hugo.IsServer }}
+        {{ with .Params.collection.price }}
+        <div class="col-label" style="opacity: 0.8; color: #d63384;">Price:</div>
+        <div class="col-value" style="color: #d63384;">{{ . }}</div>
+        {{ end }}
+        {{ with .Params.collection.serial_body }}
+        <div class="col-label" style="opacity: 0.8;">Body S/N:</div>
+        <div class="col-value"><code>{{ . }}</code></div>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    {{ with .Params.collection.maintenance_log }}
+    <div class="maintenance-log" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--tertiary);">
+        <div style="font-weight: bold; font-size: 0.8em; margin-bottom: 5px;">Maintenance Log:</div>
+        <ul style="margin: 0; padding-left: 20px; font-size: 0.85em;">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
