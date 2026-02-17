@@ -1,19 +1,21 @@
-<div class="camera-specs-container" style="margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: var(--code-bg);">
-  <h3 style="margin-top: 0;">Technical Specifications</h3>
-  <div class="specs-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px;">
-    {{ range $key, $value := .Params.specs }}
-      {{ if $value }}
-      <div class="spec-label" style="font-weight: bold; color: var(--secondary);">{{ title (replace $key "_" " ") }}</div>
-      <div class="spec-value">
-        {{ if eq $key "mount" }}
-          <a href="/mounts/{{ $value | urlize }}">{{ $value }}</a>
-        {{ else if eq $key "film_format" }}
-          <a href="/formats/{{ $value | urlize }}">{{ $value }}</a>
-        {{ else }}
-          {{ $value }}
+<div class="camera-specs-container"
+    style="margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: var(--code-bg);">
+    <h3 style="margin-top: 0;">Technical Specifications</h3>
+    <div class="specs-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px;">
+        {{ range $key, $value := .Params.specs }}
+        {{ if $value }}
+        <div class="spec-label" style="font-weight: bold; color: var(--secondary);">{{ title (replace $key "_" " ") }}
+        </div>
+        <div class="spec-value">
+            {{ if eq $key "mount" }}
+            <a href="{{ (printf " mounts/%s" ($value | urlize)) | relURL }}">{{ $value }}</a>
+            {{ else if eq $key "film_format" }}
+            <a href="{{ (printf " formats/%s" ($value | urlize)) | relURL }}">{{ $value }}</a>
+            {{ else }}
+            {{ $value }}
+            {{ end }}
+        </div>
         {{ end }}
-      </div>
-      {{ end }}
-    {{ end }}
-  </div>
+        {{ end }}
+    </div>
 </div>

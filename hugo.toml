@@ -12,6 +12,7 @@ theme = "PaperMod"
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = false
+  mainSections = ["cameras"]
 
 [taxonomies]
   tag = "tags"
@@ -41,3 +42,8 @@ theme = "PaperMod"
   name = "Brands"
   url = "/brands/"
   weight = 2
+
+[[menus.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 3
