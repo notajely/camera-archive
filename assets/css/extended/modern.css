@@ -176,7 +176,7 @@ body {
     color: var(--secondary) !important;
     font-weight: 600;
     opacity: 0.6;
-    text-align: right;
+    text-align: left;
     padding-top: 2px;
 }
 
