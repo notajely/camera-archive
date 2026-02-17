@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Formats on FilmCameraDB</title>
+    <link>https://notajely.github.io/camera-archive/formats/</link>
+    <description>Recent content in Formats on FilmCameraDB</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://notajely.github.io/camera-archive/formats/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>135 (35mm)</title>
+      <link>https://notajely.github.io/camera-archive/formats/135-35mm/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://notajely.github.io/camera-archive/formats/135-35mm/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
