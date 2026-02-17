@@ -1,0 +1,134 @@
+body {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.sidenote {
+  display: block;
+  float: right;
+  clear: right;
+  width: 160px;
+  margin-right: -185px;
+  font-size: 0.75em;
+  line-height: 1.6;
+  color: var(--secondary);
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  margin-top: 0.1em;
+}
+
+.sidenote-toggle {
+  display: none;
+}
+
+.post-content img {
+  max-width: 480px;
+  display: block;
+  margin: 1.5em 0;
+  border-radius: 4px;
+}
+
+.post-single .post-content {
+  max-width: 860px;
+}
+
+.post-single {
+  max-width: 1100px;
+}
+
+.gallery-masonry {
+  columns: 2;
+  column-gap: 12px;
+  margin: 2em 0;
+}
+
+.gallery-masonry p {
+  break-inside: avoid;
+  margin: 0 0 12px 0;
+}
+
+.gallery-masonry img {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 4px;
+  display: block;
+}
+
+.specs-table {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5em 0;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  padding: 10px 16px;
+  font-size: 0.8em;
+  color: var(--secondary);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: rgba(255,255,255,0.03);
+  display: flex;
+  align-items: center;
+}
+
+.spec-value {
+  padding: 10px 16px;
+  font-size: 0.88em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.spec-value p {
+  margin: 0;
+}
+
+.post-entry {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s;
+}
+
+.post-entry:hover {
+  border-color: var(--primary);
+}
+
+.entry-cover img {
+  border-radius: 8px 8px 0 0;
+}
+
+.entry-header h2 {
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .sidenote {
+    float: none;
+    display: inline;
+    margin: 0;
+    width: auto;
+    border-left: none;
+    padding-left: 0;
+    font-size: 0.85em;
+  }
+  .sidenote::before { content: "［"; }
+  .sidenote::after { content: "］"; }
+
+  .gallery-masonry {
+    columns: 1;
+  }
+}

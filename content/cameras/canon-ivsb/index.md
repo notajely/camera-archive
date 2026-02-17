@@ -1,0 +1,54 @@
+---
+title: "Canon IV Sb（1952）"
+date: 2026-02-17
+draft: false
+tags: ["canon", "旁轴", "35mm", "ltm"]
+brands: ["canon"]
+cover:
+  image: "CanonIVSb-1.jpg"
+  alt: "Canon IV Sb"
+---
+
+{{< specs-start >}}
+{{< spec label="Film Type" >}}135（35mm）{{< /spec >}}
+{{< spec label="Lens" >}}35mm f/3.5 Canon Serenar，4-element, coated；50mm f/1.9 Canon Serenar，6-element, coated{{< /spec >}}
+{{< spec label="Lens Mount" >}}M39 Leica Thread Mount{{< /spec >}}
+{{< spec label="Focus Range" >}}1.07m to infinite{{< /spec >}}
+{{< spec label="Viewfinder" >}}Rangefinder, Rotating Variable Prism{{< /spec >}}
+{{< spec label="Shutter" >}}Cloth Focal Plane. T, B, 1–1/1000 sec{{< /spec >}}
+{{< spec label="Flash Sync" >}}FP + X-sync @ 1/15 sec (proprietary rail mount){{< /spec >}}
+{{< spec label="Metering" >}}None{{< /spec >}}
+{{< spec label="Battery" >}}None{{< /spec >}}
+{{< specs-end >}}
+
+{{< gallery >}}
+![1952年美国市场宣传广告](CanonIVSbAd.jpg)
+![manual-cover](CanonIVS2Manual.jpg)
+![serenar-50mm-f/1-8](serenar-50mm.jpg)
+![canonIVSb-2](CanonIVSb-2.jpg)
+{{< /gallery >}}
+
+## References
+
+- [Manual](http://www.cameramanuals.org/canon_pdf/canon_ii_d_iv_s2.pdf)
+- [Camera details pictures](https://ewoodsphoto.com/2022/10/21/when-cameras-are-jewelry-and-nothing-more-canon-ivsb/)
+- [Some photoes with 35mm lens](https://www.flickr.com/photos/cannelbrae/albums/72157628007331001/with/6472078899)
+- [Mike Eckman evaluation](https://mikeeckman.com/2019/10/canon-ivsb-1952/)
+- [Cameraquest](https://cameraquest.com/crf2f2.htm)
+- [Photoethnography](https://www.photoethnography.com/ClassicCameras/CanonIV.html)
+
+---
+
+## Notes
+
+电影 *Carol* 中，Carol 赠送 Therese 的胶片机即为 Canon IV Sb。
+
+![Carol 赠送 Therese 的 IV Sb](ivsb-in-carol.jpg)
+
+**Rangefinder Camera 旁轴相机**： 通过取景器里两个重叠影像判断焦距，转动对焦环直到影像合而为一即为合焦。与单反（SLR）通过镜片直接看焦平面不同，旁轴取景窗和镜头是分开的，好处是取景器明亮清晰、机身更薄。
+
+**镀膜 coated**： 指镜片表面镀了薄膜，用于减少反射、提升透光率和对比度。1950 年代初为单层镀膜，多层镀膜要到 1970 年代才普及。
+
+**FP X-sync**： FP 是闪光灯泡同步，X 是电子闪光同步。这两种闪光方式的触发时机不同——灯泡需要提前点火，电子闪光是瞬发的。IV Sb 之前的相机通常只支持一种，或者通过外挂转换器实现。Canon 把两个同步模式都内置进快门，是当时的技术突破。不过接口是专有的导轨式，不是通用 PC 口，所以实际使用时配件兼容性受限。
+
+***Canon Rangefinder Cameras 1933–68***：Dechert 专门研究 Canon 旁轴的书。书中他排第一的是 Canon IIB，Canon 第一台整合取景器和测距仪的相机（1949年），IV Sb 是在 IIB 基础上加了 X-sync，所以排第二。徕卡 M3 出来之后，Canon 整条旁轴路线就基本让位了，所以这个"第二重要"也带着一种终章前的意味。

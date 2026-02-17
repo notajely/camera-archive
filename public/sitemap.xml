@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/cameras/canon-ivsb/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/35mm/</loc>
+  </url><url>
+    <loc>//localhost:1313/brands/</loc>
+  </url><url>
+    <loc>//localhost:1313/cameras/</loc>
+  </url><url>
+    <loc>//localhost:1313/brands/canon/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/canon/</loc>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/ltm/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/%E6%97%81%E8%BD%B4/</loc>
+  </url>
+</urlset>

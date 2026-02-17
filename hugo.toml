@@ -1,0 +1,22 @@
+baseURL = "/"
+languageCode = "zh-cn"
+title = "FilmCameraDB"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 20
+[params]
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+[taxonomies]
+  tag = "tags"
+  brand = "brands"
+[[menus.main]]
+  name = "Cameras"
+  url = "/cameras/"
+  weight = 1
+[[menus.main]]
+  name = "brands"
+  url = "/brands/"
+  weight = 2
