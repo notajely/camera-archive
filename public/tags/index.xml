@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on FilmCameraDB</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on FilmCameraDB</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>35mm</title>
-      <link>//localhost:1313/tags/35mm/</link>
+      <link>/tags/35mm/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/35mm/</guid>
+      <guid>/tags/35mm/</guid>
       <description></description>
     </item>
     <item>
       <title>Canon</title>
-      <link>//localhost:1313/tags/canon/</link>
+      <link>/tags/canon/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/canon/</guid>
+      <guid>/tags/canon/</guid>
       <description></description>
     </item>
     <item>
       <title>Ltm</title>
-      <link>//localhost:1313/tags/ltm/</link>
+      <link>/tags/ltm/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/ltm/</guid>
+      <guid>/tags/ltm/</guid>
       <description></description>
     </item>
     <item>
       <title>旁轴</title>
-      <link>//localhost:1313/tags/%E6%97%81%E8%BD%B4/</link>
+      <link>/tags/%E6%97%81%E8%BD%B4/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/%E6%97%81%E8%BD%B4/</guid>
+      <guid>/tags/%E6%97%81%E8%BD%B4/</guid>
       <description></description>
     </item>
   </channel>

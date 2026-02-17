@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/cameras/canon-ivsb/</loc>
+    <loc>/tags/35mm/</loc>
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/35mm/</loc>
+    <loc>/brands/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/brands/</loc>
+    <loc>/cameras/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/cameras/</loc>
+    <loc>/brands/canon/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/brands/canon/</loc>
+    <loc>/tags/canon/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/canon/</loc>
+    <loc>/cameras/canon-ivsb/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ltm/</loc>
+    <loc>/tags/ltm/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E6%97%81%E8%BD%B4/</loc>
+    <loc>/tags/%E6%97%81%E8%BD%B4/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url>
 </urlset>
