@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rollei on FilmCameraDB</title>
+    <link>https://notajely.github.io/camera-archive/brands/rollei/</link>
+    <description>Recent content in Rollei on FilmCameraDB</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://notajely.github.io/camera-archive/brands/rollei/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rollei 35 Service Manual (1972)</title>
+      <link>https://notajely.github.io/camera-archive/library/rollei-35-service-manual/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://notajely.github.io/camera-archive/library/rollei-35-service-manual/</guid>
+      <description>&lt;p&gt;Complete factory service and repair manual for the Rollei 35 series. Contains detailed exploded views and adjustment procedures.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
