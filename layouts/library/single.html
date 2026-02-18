@@ -1,0 +1,41 @@
+{{- define "main" }}
+
+<article class="post-single">
+    <header class="post-header">
+        {{- partial "breadcrumbs.html" . }}
+        <h1 class="post-title">
+            {{ .Title }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+        <div class="post-meta">
+            <span class="mount-pill">{{ .Params.category }}</span>
+            {{ if .Params.language }}
+            <span class="mount-pill" style="background: var(--tertiary); color: var(--theme);">{{ .Params.language
+                }}</span>
+            {{ end }}
+        </div>
+    </header>
+
+    <div class="post-content">
+        {{- .Content }}
+
+        <div class="pdf-container" style="margin-top: 30px;">
+            <iframe src="{{ .Params.file_path | relURL }}" width="100%" height="800px"
+                style="border: 1px solid var(--border-color); border-radius: var(--card-radius);">
+                This browser does not support PDFs. Please download the PDF to view it: <a
+                    href="{{ .Params.file_path | relURL }}">Download PDF</a>.
+            </iframe>
+        </div>
+    </div>
+
+    <footer class="post-footer">
+        <a class="status-badge" href="{{ .Params.file_path | relURL }}" style="text-decoration: none;">DOWNLOAD ORIGINAL
+            PDF</a>
+    </footer>
+</article>
+
+{{- end }}{{/* end main */}}
