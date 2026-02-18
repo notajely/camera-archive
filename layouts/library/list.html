@@ -1,0 +1,45 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+{{- partial "index_profile.html" . }}
+{{- else }} {{/* if not profileMode */}}
+
+{{- if .Content }}
+<div class="post-content">
+    {{- .Content }}
+</div>
+{{- end }}
+
+<div class="library-grid">
+    {{- range .Pages }}
+    <article class="post-entry camera-card library-card">
+        <div class="card-details">
+            <header class="entry-header">
+                <h2 class="entry-hint-parent">
+                    {{- .Title }}
+                </h2>
+            </header>
+
+            <div class="card-specs" style="margin-bottom: 15px;">
+                <span class="mount-pill">{{ .Params.category }}</span>
+                {{ if .Params.language }}
+                <span class="mount-pill" style="background: var(--tertiary); color: var(--theme);">{{ .Params.language
+                    }}</span>
+                {{ end }}
+            </div>
+
+            <div class="entry-content">
+                <p>{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
+            </div>
+
+            <footer class="entry-footer" style="margin-top: auto; padding-top: 15px;">
+                <a href="{{ .Params.file_path | relURL }}" class="status-badge"
+                    style="text-decoration: none; display: inline-block;">DOWNLOAD PDF</a>
+            </footer>
+        </div>
+    </article>
+    {{- end }}
+</div>
+
+{{- end }}{{/* end profileMode */}}
+{{- end }}{{/* end main */}}
