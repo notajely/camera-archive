@@ -6,7 +6,7 @@ type: "library"
 category: "User Manual"
 camera_model: "Canon IV-S2"
 language: "EN"
-file_path: "/manuals/canon_ii_d_iv_s2.pdf"
+file_path: "manuals/canon_ii_d_iv_s2.pdf"
 brands: ["canon"]
 ---
 

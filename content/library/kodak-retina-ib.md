@@ -6,7 +6,7 @@ type: "library"
 category: "User Manual"
 camera_model: "Kodak Retina Ib"
 language: "EN"
-file_path: "/manuals/kodak_retina_ib.pdf"
+file_path: "manuals/kodak_retina_ib.pdf"
 brands: ["kodak"]
 ---
 

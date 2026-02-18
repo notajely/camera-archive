@@ -6,7 +6,7 @@ type: "library"
 category: "Service Manual"
 camera_model: "Rollei 35"
 language: "DE"
-file_path: "/manuals/Rollei_35_Service_Manual_1972.pdf"
+file_path: "manuals/Rollei_35_Service_Manual_1972.pdf"
 brands: ["rollei"]
 ---
 
